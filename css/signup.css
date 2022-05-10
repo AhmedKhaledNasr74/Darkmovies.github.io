@@ -1,0 +1,88 @@
+:root{
+    --main-color:#dca523;
+    --second-color:#ffffff1a;
+    --background-color:#0f0a05;
+    --second-text-color:#fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+body{
+    background-color: #ebd38f;
+    font-family: 'Rubik', sans-serif;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+.container{
+    display: flex;
+    height: calc(100vh);
+    width:calc(100vw) ;
+    background-image: url("../images/back.jpg");
+    background-size: cover;
+
+}
+.container .box{
+    background-color: var(--main-color);
+    width: 800px;
+    height: 550px;
+    margin: auto;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.container .box .yellow{
+    background-color: var(--main-color);
+    width: 450px;
+    height: 550px;
+    margin: auto;
+}
+.container .box .yellow .col1{
+    padding: 50px;
+    text-align: center;
+}
+.container .box .yellow .col1 h1{
+    font-size: 40px;
+}
+.container .box .yellow .col1 h1,.container .box .yellow .col1 p{
+    text-align: center;
+    margin: 20px 0;
+}
+.container .box .yellow .col1 .icons{
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.container .box .yellow .col1 .icons i{
+    margin: 0 10px;
+}
+.container .yellow .col1 input[type="text"],input[type="email"],input[type="password"]{
+    height: 20px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    border: none;
+}
+.container .box .yellow .col1 a{
+    text-decoration: none;
+}
+.container .yellow .col1 input[type="submit"]{
+    display: flex;
+    margin: 50px auto;
+    border-radius: 20px;
+    font-size: larger;
+    font-weight: 600;
+    border: none;
+    color: var(--background-color);
+    padding: 10px 55px;
+}
+.container .yellow .col1 a{
+    color: var(--background-color);
+}
